@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2023-04-18 18:23:24 by Eclipse SUMO netedit Version 1.13.0
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <!-- VTypes -->
+    <vType id="bike" length="1.80" maxSpeed="7.50" vClass="bicycle" width="0.80" accel="0.8" decel="1.5"/>
+    <vType id="bus" length="15.00" maxSpeed="30.00" speedFactor="normc(1.00,0.10)" vClass="bus" accel="1.2" decel="2.5" sigma="0.1"/>
+    <vType id="pedestrian" length="0.30" vClass="pedestrian" width="0.50" accel="0.2" decel="1.5" sigma="0.2"/>
+    <vType id="pkw" maxSpeed="50.00" speedFactor="normc(1.00,0.20)" vClass="passenger"/>
+    <vType id="tram" length="40.00" maxSpeed="13.00" speedFactor="normc(1.00,0.10)" vClass="rail_urban" accel="0.8" decel="0.5" sigma="0.10"/>
+
+    <!-- Vehicles -->
+    <vehicle id="bike_s" type="bike" depart="0" departPos="-0.01">
+        <route edges="beg end"/>
+    </vehicle>
+    <vehicle id="bus_s" type="bus" depart="0" departPos="-0.01">
+        <route edges="beg end"/>
+    </vehicle>
+    <vehicle id="pkw_s" type="pkw" depart="0" departPos="-0.01">
+        <route edges="beg end"/>
+    </vehicle>
+    <vehicle id="tram_s" type="tram" depart="0" departPos="-0.01">
+        <route edges="beg end"/>
+    </vehicle>
+
+    <!-- Flows -->
+    <flow id="bike" vType="bike" from="beg" to="end" begin="0" end="0" departPos="last" departLane="beg_1" number="99"/>
+    <flow id="bus" vType="bus" from="beg" to="end" begin="0" end="0" departPos="last" departLane="beg_2" number="4"/>
+    <flow id="pkw" vType="pkw" from="beg" to="end" begin="0" end="0" departPos="last" departLane="beg_3" number="66"/>
+    <flow id="tram" vType="tram" from="beg" to="end" begin="0" end="0" departPos="last" departLane="beg_4" number="1"/>
+    
+    
+    <!-- Pedestrian -->
+    <person id="pedestrian" vtype="pedestrian" begin="0" end="0" departPos="-30" departLane="beg_0" number="100">
+        <walk from="beg" to="end" arrivalPos="-0.1"/>
+    </person>
+</routes>
+

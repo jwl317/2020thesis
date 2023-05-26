@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2023-04-18 18:23:24 by Eclipse SUMO netedit Version 1.13.0
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <!-- VTypes -->
+    <vType id="bike" length="1.80" maxSpeed="7.50" vClass="bicycle" width="0.80" accel="0.8" decel="1.5"/>
+    <vType id="bus" length="15.00" maxSpeed="30.00" speedFactor="normc(1.00,0.10)" vClass="bus" accel="1.2" decel="2.5" sigma="0.1"/>
+    <vType id="pedestrian" length="0.30" vClass="pedestrian" width="0.50" accel="0.2" decel="1.5" sigma="0.2"/>
+    <vType id="pkw" maxSpeed="50.00" speedFactor="normc(1.00,0.20)"/>
+    <vType id="tram" length="40.00" maxSpeed="13.00" speedFactor="normc(1.00,0.10)" vClass="rail_urban" accel="0.8" decel="0.5" sigma="0.10"/>
+</routes>
