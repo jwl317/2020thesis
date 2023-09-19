@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2023년 09월 19일 (화) 오후 05시 30분 26초 by Eclipse SUMO netedit Version 1.8.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="/home/jwl/sumoproject/grid.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="/home/jwl/sumoproject/grid.net.xml"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="false"/>
+    </processing>
+
+    <junctions>
+        <no-internal-links value="false"/>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.5"/>
+        <rectangular-lane-cut value="false"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="false"/>
+    </pedestrian>
+
+    <netedit>
+        <additional-files value="/home/jwl/sumoproject/add.add.xml"/>
+    </netedit>
+
+    <report>
+        <aggregate-warnings value="5"/>
+    </report>
+
+</configuration>
+-->
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <busStop id="busStop_-gneE18_1_7" lane="-gneE18_1" startPos="10.48" endPos="20.48"/>
+    <busStop id="busStop_-gneE20_1_6" lane="-gneE20_1" startPos="8.72" endPos="18.72"/>
+    <busStop id="busStop_-gneE22_1_5" lane="-gneE22_1" startPos="6.45" endPos="16.45"/>
+    <busStop id="busStop_-gneE24_1_4" lane="-gneE24_1" startPos="5.02" endPos="15.02"/>
+    <busStop id="busStop_gneE19_1_1" lane="gneE19_1" startPos="25.38" endPos="35.38"/>
+    <busStop id="busStop_gneE21_1_2" lane="gneE21_1" startPos="21.73" endPos="31.73"/>
+    <busStop id="busStop_gneE23_1_3" lane="gneE23_1" startPos="25.64" endPos="35.64"/>
+    <busStop id="busStop_gneE25_1_0" lane="gneE25_1" startPos="25.79" endPos="35.79"/>
+</additional>
