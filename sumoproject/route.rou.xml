@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2023년 09월 19일 (화) 오후 05시 44분 51초 by Eclipse SUMO netedit Version 1.8.0
+<!-- generated on 2023년 09월 20일 (수) 오후 03시 50분 38초 by Eclipse SUMO netedit Version 1.8.0
 <configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
 
     <input>
@@ -43,8 +43,15 @@
 -->
 
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
-    <vType id="bus" vClass="bus" emissionClass="HBEFA3/PC_G_EU4" width="1.80" height="1.50" color="yellow"/>
+    <vType id="bus" vClass="bus" emissionClass="HBEFA3/PC_G_EU4" width="1.80" height="1.50" color="red"/>
     <vType id="vType_0"/>
-    <route edges="gneE25 gneE18 gneE19 gneE20 gneE21 gneE22 gneE23 gneE24" color="blue" id="route_0"/>
-    <route edges="-gneE24 -gneE23 -gneE22 -gneE21 -gneE20 -gneE19 -gneE18 -gneE25" color="red" id="route_1"/>
+    <flow id="flow_0" type="bus" line="bus" begin="0.00" from="-gneE25" to="-gneE24" end="3600.00" number="50">
+		<stop busStop="busStop_-gneE25_1_0" duration="20"/>
+		<stop busStop="busStop_-gneE24_1_1" duration="20"/>
+	</flow>
+    <personFlow id="personFlow_0" begin="0.00" end="3600.00" number="1800">
+        <walk from="-gneE25" busStop="busStop_-gneE25_1_0"/>
+		<ride busStop="busStop_-gneE24_1_1" lines="bus"/>
+		<walk to="-gneE24"/>
+    </personFlow>
 </routes>
