@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2023년 10월 27일 (금) 오후 09시 14분 40초 by Eclipse SUMO netedit Version 1.8.0
+<!-- generated on 2023년 10월 28일 (토) 오후 08시 37분 22초 by Eclipse SUMO netedit Version 1.8.0
 <configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
 
     <input>
@@ -31,6 +31,7 @@
 
     <netedit>
         <additional-files value="/home/jwl/sumoproject/add.add.xml"/>
+        <route-files value="/home/jwl/sumoproject/rou.rou.xml"/>
     </netedit>
 
     <report>
@@ -41,14 +42,13 @@
 -->
 
 <additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
-    <busStop id="S1" lane="A1_1" startPos="16.11" endPos="26.11"/>
     <busStop id="S10" lane="RM_1" startPos="21.52" endPos="31.52"/>
     <busStop id="S11" lane="LM_1" startPos="25.63" endPos="35.63"/>
     <busStop id="S12" lane="-gneE75_1" startPos="17.85" endPos="27.85"/>
     <busStop id="S13" lane="MN_1" startPos="25.88" endPos="35.88"/>
     <busStop id="S14" lane="MH_1" startPos="20.14" endPos="30.14"/>
     <busStop id="S15" lane="NI_1" startPos="24.10" endPos="34.10"/>
-    <busStop id="S16" lane="HI_1" startPos="18.56" endPos="28.56"/>
+    <busStop id="S16" lane="HI_1" startPos="23.22" endPos="33.22"/>
     <busStop id="S17" lane="IJ_1" startPos="19.58" endPos="29.58"/>
     <busStop id="S18" lane="ID_1" startPos="21.24" endPos="31.24"/>
     <busStop id="S19" lane="JE_1" startPos="22.78" endPos="32.78"/>

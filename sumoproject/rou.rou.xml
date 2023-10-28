@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2023년 10월 28일 (토) 오후 08시 46분 37초 by Eclipse SUMO netedit Version 1.8.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="/home/jwl/sumoproject/10x10grid.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="/home/jwl/sumoproject/10x10grid.net.xml"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="false"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.5"/>
+        <rectangular-lane-cut value="false"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="false"/>
+    </pedestrian>
+
+    <netedit>
+        <additional-files value="/home/jwl/sumoproject/add.add.xml"/>
+        <route-files value="/home/jwl/sumoproject/rou.rou.xml"/>
+    </netedit>
+
+    <report>
+        <aggregate-warnings value="5"/>
+    </report>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <route edges="UP B1 B2 RM MN NO OJ gneE16 gneE17" color="128,0,0" id="route_0"/>
+    <route edges="UP PK KF FA -gneE75 -gneE74 -gneE73 -gneE72 -gneE71 gneE62 gneE63 gneE64 gneE65 gneE66 gneE67 gneE68 gneE69 gneE70" color="255,181,0" id="route_1"/>
+    <route edges="UP PK KF FA -gneE75 gneE26 gneE27 gneE28 gneE29 gneE30 gneE31 gneE32 gneE33 gneE34 -gneE141 -gneE140 -gneE139 -gneE138" color="89,0,255" id="route_2"/>
+    <route edges="UP PK KF FA -gneE75 gneE26 gneE27 gneE28 gneE29 gneE30 -gneE125 gneE124 gneE123 -gneE122 gneE67 gneE68 gneE69 gneE70" color="magenta" id="route_3"/>
+    <route edges="UP PK KF FG GH HI IJ gneE16 gneE17 gneE18 gneE19 gneE20 -gneE102 -gneE97 -gneE141 -gneE140 -gneE139 -gneE138" color="cyan" id="route_4"/>
+    <route edges="UP PK KF FG GH HI ID gneE91 -gneE90 gneE38 gneE39 gneE40 -gneE128 gneE127 -gneE126 gneE68 gneE69 gneE70" color="0,2,255" id="route_5"/>
+    <route edges="UP B1 QL LM MH HI ID DE -gneE92 gneE30 -gneE125 gneE40 -gneE128 gneE50 -gneE131 gneE60 -gneE134 gneE70" color="red" id="route_6"/>
+    <route edges="UP PK KF FA -gneE75 -gneE74 -gneE73 gneE44 gneE45 gneE46 gneE47 gneE48 gneE49 gneE50 gneE51 gneE52 -gneE139 -gneE138" color="193,168,69" id="route_7"/>
+</routes>
