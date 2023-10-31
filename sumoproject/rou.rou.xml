@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2023년 10월 28일 (토) 오후 08시 46분 37초 by Eclipse SUMO netedit Version 1.8.0
+<!-- generated on 2023년 10월 31일 (화) 오후 05시 09분 17초 by Eclipse SUMO netedit Version 1.8.0
 <configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
 
     <input>
@@ -42,12 +42,39 @@
 -->
 
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
-    <route edges="UP B1 B2 RM MN NO OJ gneE16 gneE17" color="128,0,0" id="route_0"/>
-    <route edges="UP PK KF FA -gneE75 -gneE74 -gneE73 -gneE72 -gneE71 gneE62 gneE63 gneE64 gneE65 gneE66 gneE67 gneE68 gneE69 gneE70" color="255,181,0" id="route_1"/>
-    <route edges="UP PK KF FA -gneE75 gneE26 gneE27 gneE28 gneE29 gneE30 gneE31 gneE32 gneE33 gneE34 -gneE141 -gneE140 -gneE139 -gneE138" color="89,0,255" id="route_2"/>
-    <route edges="UP PK KF FA -gneE75 gneE26 gneE27 gneE28 gneE29 gneE30 -gneE125 gneE124 gneE123 -gneE122 gneE67 gneE68 gneE69 gneE70" color="magenta" id="route_3"/>
-    <route edges="UP PK KF FG GH HI IJ gneE16 gneE17 gneE18 gneE19 gneE20 -gneE102 -gneE97 -gneE141 -gneE140 -gneE139 -gneE138" color="cyan" id="route_4"/>
-    <route edges="UP PK KF FG GH HI ID gneE91 -gneE90 gneE38 gneE39 gneE40 -gneE128 gneE127 -gneE126 gneE68 gneE69 gneE70" color="0,2,255" id="route_5"/>
-    <route edges="UP B1 QL LM MH HI ID DE -gneE92 gneE30 -gneE125 gneE40 -gneE128 gneE50 -gneE131 gneE60 -gneE134 gneE70" color="red" id="route_6"/>
-    <route edges="UP PK KF FA -gneE75 -gneE74 -gneE73 gneE44 gneE45 gneE46 gneE47 gneE48 gneE49 gneE50 gneE51 gneE52 -gneE139 -gneE138" color="193,168,69" id="route_7"/>
+
+    <vType id="bus" vClass="bus"/>
+	
+    <route edges="UP B1 B2 RM MN NO OJ gneE16 gneE17 gneE99 gneE94 gneE32 gneE33 gneE34 -gneE141 -gneE140 -gneE139 -gneE138" color="128,0,0" id="route_0">
+	</route>
+    <route edges="UP PK KF FA -gneE75 -gneE74 -gneE73 -gneE72 -gneE71 gneE62 gneE63 gneE64 gneE65 gneE66 gneE67 gneE68 gneE69 gneE70" color="255,181,0" id="route_1">
+    </route>
+    <route edges="UP PK KF FA -gneE75 gneE26 gneE27 gneE28 gneE29 gneE30 gneE31 gneE32 gneE33 gneE34 -gneE141 -gneE140 -gneE139 -gneE138" color="89,0,255" id="route_2">
+    </route>
+    <route edges="UP PK KF FA -gneE75 gneE26 gneE27 gneE28 gneE29 gneE30 -gneE125 gneE124 gneE123 -gneE122 gneE67 gneE68 gneE69 gneE70" color="magenta" id="route_3">
+    </route>
+    <route edges="UP PK KF FG GH HI IJ gneE16 gneE17 gneE18 gneE19 gneE20 -gneE102 -gneE97 -gneE141 -gneE140 -gneE139 -gneE138" color="cyan" id="route_4">
+    </route>
+    <route edges="UP PK KF FG GH HI ID gneE91 -gneE90 gneE38 gneE39 gneE40 -gneE128 gneE127 -gneE126 gneE68 gneE69 gneE70" color="0,2,255" id="route_5">
+    </route>
+    <route edges="UP B1 QL LM MH HI ID DE -gneE92 gneE30 -gneE125 gneE40 -gneE128 gneE50 -gneE131 gneE60 -gneE134 gneE70" color="red" id="route_6">
+    </route>
+    <route edges="UP PK KF FA -gneE75 -gneE74 -gneE73 gneE44 gneE45 gneE46 gneE47 gneE48 gneE49 gneE50 gneE51 gneE52 -gneE139 -gneE138" color="193,168,69" id="route_7">
+    </route>
+    <route edges="UP PK KF FG GH HI IJ JE -gneE92 gneE121 gneE120 gneE119 gneE118 gneE66 gneE67 gneE68 gneE69 gneE70" color="yellow" id="route_8">
+    </route>
+    <route edges="UP PK KF FA -gneE75 -gneE74 gneE35 gneE36 gneE37 gneE38 gneE39 gneE40 gneE41 gneE42 gneE43 -gneE140 -gneE139 -gneE138" color="0,128,128" id="route_9">
+    </route>
+	
+    <vehicle id="vehicle_0" type="bus" depart="0.00" route="route_0" color="128,0,0"/>
+    <vehicle id="vehicle_1" type="bus" depart="0.00" route="route_1" color="255,181,0"/>
+    <vehicle id="vehicle_2" type="bus" depart="0.00" route="route_2" color="89,0,255"/>
+    <vehicle id="vehicle_3" type="bus" depart="0.00" route="route_3" color="magenta"/>
+    <vehicle id="vehicle_4" type="bus" depart="0.00" route="route_4" color="cyan"/>
+    <vehicle id="vehicle_5" type="bus" depart="0.00" route="route_5" color="0,2,255"/>
+    <vehicle id="vehicle_6" type="bus" depart="0.00" route="route_6" color="red"/>
+    <vehicle id="vehicle_7" type="bus" depart="0.00" route="route_7" color="193,168,69"/>
+    <vehicle id="vehicle_8" type="bus" depart="0.00" route="route_8" color="yellow"/>
+    <vehicle id="vehicle_9" type="bus" depart="0.00" route="route_9" color="0,128,128"/>
+	
 </routes>
