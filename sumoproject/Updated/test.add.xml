@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2023년 11월 02일 (목) 오후 05시 21분 40초 by Eclipse SUMO netedit Version 1.8.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="/home/jwl/sumoproject/code_busstops%20per%20route/9x9grid.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="/home/jwl/sumoproject/code_busstops%20per%20route/9x9grid.net.xml"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="false"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.5"/>
+        <rectangular-lane-cut value="false"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="false"/>
+    </pedestrian>
+
+    <netedit>
+        <additional-files value="/home/jwl/sumoproject/code_busstops%20per%20route/test.add.xml"/>
+    </netedit>
+
+    <report>
+        <aggregate-warnings value="5"/>
+    </report>
+
+</configuration>
+-->
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <busStop id="S10" lane="RM_1" startPos="21.52" endPos="31.52"/>
+    <busStop id="S11" lane="LM_1" startPos="25.63" endPos="35.63"/>
+    <busStop id="S12" lane="-gneE75_1" startPos="17.85" endPos="27.85"/>
+    <busStop id="S13" lane="MN_1" startPos="25.88" endPos="35.88"/>
+    <busStop id="S14" lane="MH_1" startPos="20.14" endPos="30.14"/>
+    <busStop id="S16" lane="HI_1" startPos="23.22" endPos="33.22"/>
+    <busStop id="S17" lane="IJ_1" startPos="19.58" endPos="29.58"/>
+    <busStop id="S2" lane="UP_1" startPos="17.08" endPos="27.08"/>
+    <busStop id="S20" lane="DE_1" startPos="20.51" endPos="30.51"/>
+    <busStop id="S22" lane="gneE17_1" startPos="21.61" endPos="31.61"/>
+    <busStop id="S24" lane="-gneE92_1" startPos="23.15" endPos="33.15"/>
+    <busStop id="S25" lane="-gneE90_1" startPos="25.05" endPos="35.05"/>
+    <busStop id="S26" lane="-gneE71_1" startPos="17.93" endPos="27.93"/>
+    <busStop id="S28" lane="gneE30_1" startPos="20.86" endPos="30.86"/>
+    <busStop id="S29" lane="gneE31_1" startPos="21.05" endPos="31.05"/>
+    <busStop id="S30" lane="-gneE125_1" startPos="23.54" endPos="33.54"/>
+    <busStop id="S32" lane="gneE40_1" startPos="21.54" endPos="31.54"/>
+    <busStop id="S33" lane="-gneE97_1" startPos="20.51" endPos="30.51"/>
+    <busStop id="S34" lane="gneE34_1" startPos="17.57" endPos="27.57"/>
+    <busStop id="S36" lane="-gneE128_1" startPos="20.47" endPos="30.47"/>
+    <busStop id="S37" lane="-gneE122_1" startPos="15.79" endPos="25.79"/>
+    <busStop id="S38" lane="gneE66_1" startPos="13.43" endPos="23.43"/>
+    <busStop id="S40" lane="gneE50_1" startPos="19.89" endPos="29.89"/>
+    <busStop id="S43" lane="-gneE131_1" startPos="23.79" endPos="33.79"/>
+    <busStop id="S44" lane="-gneE126_1" startPos="18.74" endPos="28.74"/>
+    <busStop id="S46" lane="gneE60_1" startPos="19.86" endPos="29.86"/>
+    <busStop id="S48" lane="-gneE134_1" startPos="22.55" endPos="32.55"/>
+    <busStop id="S49" lane="-gneE138_1" startPos="20.66" endPos="30.66"/>
+    <busStop id="S5" lane="B1_1" startPos="16.51" endPos="26.51"/>
+    <busStop id="S50" lane="gneE70_1" startPos="16.73" endPos="26.73"/>
+    <busStop id="S7" lane="B2_1" startPos="17.27" endPos="27.27"/>
+    <busStop id="S8" lane="QL_1" startPos="16.34" endPos="26.34"/>
+</additional>
