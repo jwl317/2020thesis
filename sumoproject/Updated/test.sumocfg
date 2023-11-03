@@ -6,9 +6,19 @@
 <configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
-        <net-file value="/home/jwl/sumoproject/code_busstops%20per%20route/9x9grid.net.xml"/>
-        <route-files value="/home/jwl/sumoproject/code_busstops%20per%20route/bus.rou.xml"/>
-        <additional-files value="/home/jwl/sumoproject/code_busstops%20per%20route/test.add.xml"/>
+        <net-file value="/home/jwl/sumoproject/Updated/9x9grid.net.xml"/>
+        <route-files value="/home/jwl/sumoproject/Updated/bus.rou.xml"/>
+        <additional-files value="/home/jwl/sumoproject/Updated/test.add.xml"/>
     </input>
-
+	
+	<time>
+		<begin value = "0"/>
+		<end value = "3600"/>
+	</time>
+	
+	<viewsettings>
+		<scheme name="real world"/>
+		<delay value = "100"/>
+	</viewsettings>
+	
 </configuration>

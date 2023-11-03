@@ -42,9 +42,10 @@
 -->
 
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
-    <vType id="bus" vClass="bus"/>
-    <vehicle id="vehicle_0" type="bus" depart="1.00" color="128,0,0">
-        <route edges="UP B1 B2 RM MN NO OJ gneE16 gneE17 gneE99 gneE94 gneE32 gneE33 gneE34 -gneE141 -gneE140 -gneE139 -gneE138" color="yellow"/>
+    <vType id="bus" vClass="bus" personCapacity="10"/>
+	<vType id="passenger" vClass="passenger" />
+    <flow id="vehicle_0" type="bus" begin="0.00" end="3600.00" vehsPerHour="60" color="128,0,0">
+        <route edges="UP B1 B2 RM MN NO OJ gneE16 gneE17 gneE99 gneE94 gneE32 gneE33 gneE34 -gneE141 -gneE140 -gneE139 -gneE138" color="128,0,0"/>
         <stop busStop="S2" duration="20.00"/>
         <stop busStop="S5" duration="20.00"/>
         <stop busStop="S7" duration="20.00"/>
@@ -53,50 +54,50 @@
         <stop busStop="S22" duration="20.00"/>
         <stop busStop="S34" duration="20.00"/>
         <stop busStop="S49" duration="20.00"/>
-    </vehicle>
-    <vehicle id="vehicle_1" type="bus" depart="2.00" color="255,181,0">
-        <route edges="UP PK KF FA -gneE75 -gneE74 -gneE73 -gneE72 -gneE71 gneE62 gneE63 gneE64 gneE65 gneE66 gneE67 gneE68 gneE69 gneE70" color="yellow"/>
+    </flow>
+    <flow id="vehicle_1" type="bus" begin="0.00" end="3600.00" vehsPerHour="60" color="255,181,0">
+        <route edges="UP PK KF FA -gneE75 -gneE74 -gneE73 -gneE72 -gneE71 gneE62 gneE63 gneE64 gneE65 gneE66 gneE67 gneE68 gneE69 gneE70" color="255,181,0"/>
         <stop busStop="S2" duration="20.00"/>
         <stop busStop="S12" duration="20.00"/>
         <stop busStop="S26" duration="20.00"/>
         <stop busStop="S38" duration="20.00"/>
         <stop busStop="S50" duration="20.00"/>
-    </vehicle>
-    <vehicle id="vehicle_2" type="bus" depart="3.00" color="89,0,255">
-        <route edges="UP PK KF FA -gneE75 gneE26 gneE27 gneE28 gneE29 gneE30 gneE31 gneE32 gneE33 gneE34 -gneE141 -gneE140 -gneE139 -gneE138" color="yellow"/>
+    </flow>
+    <flow id="vehicle_2" type="bus" begin="0.00" end="3600.00" vehsPerHour="60" color="89,0,255">
+        <route edges="UP PK KF FA -gneE75 gneE26 gneE27 gneE28 gneE29 gneE30 gneE31 gneE32 gneE33 gneE34 -gneE141 -gneE140 -gneE139 -gneE138" color="89,0,255"/>
         <stop busStop="S2" duration="20.00"/>
         <stop busStop="S12" duration="20.00"/>
         <stop busStop="S29" duration="20.00"/>
         <stop busStop="S34" duration="20.00"/>
         <stop busStop="S49" duration="20.00"/>
-    </vehicle>
-    <vehicle id="vehicle_3" type="bus" depart="4.00" color="magenta">
-        <route edges="UP PK KF FA -gneE75 gneE26 gneE27 gneE28 gneE29 gneE30 -gneE125 gneE124 gneE123 -gneE122 gneE67 gneE68 gneE69 gneE70" color="yellow"/>
+    </flow>
+    <flow id="vehicle_3" type="bus" begin="0.00" end="3600.00" vehsPerHour="60" color="magenta">
+        <route edges="UP PK KF FA -gneE75 gneE26 gneE27 gneE28 gneE29 gneE30 -gneE125 gneE124 gneE123 -gneE122 gneE67 gneE68 gneE69 gneE70" color="magenta"/>
         <stop busStop="S2" duration="20.00"/>
         <stop busStop="S12" duration="20.00"/>
         <stop busStop="S28" duration="20.00"/>
         <stop busStop="S37" duration="20.00"/>
         <stop busStop="S50" duration="20.00"/>
-    </vehicle>
-    <vehicle id="vehicle_4" type="bus" depart="5.00" color="cyan">
-        <route edges="UP PK KF FG GH HI IJ gneE16 gneE17 gneE18 gneE19 gneE20 -gneE102 -gneE97 -gneE141 -gneE140 -gneE139 -gneE138" color="yellow"/>
+    </flow>
+    <flow id="vehicle_4" type="bus" begin="0.00" end="3600.00" vehsPerHour="60" color="cyan">
+        <route edges="UP PK KF FG GH HI IJ gneE16 gneE17 gneE18 gneE19 gneE20 -gneE102 -gneE97 -gneE141 -gneE140 -gneE139 -gneE138" color="cyan"/>
         <stop busStop="S2" duration="20.00"/>
         <stop busStop="S16" duration="20.00"/>
         <stop busStop="S22" duration="20.00"/>
         <stop busStop="S33" duration="20.00"/>
         <stop busStop="S49" duration="20.00"/>
-    </vehicle>
-    <vehicle id="vehicle_5" type="bus" depart="6.00" color="0,2,255">
-        <route edges="UP PK KF FG GH HI ID gneE91 -gneE90 gneE38 gneE39 gneE40 -gneE128 gneE127 -gneE126 gneE68 gneE69 gneE70" color="yellow"/>
+    </flow>
+    <flow id="vehicle_5" type="bus" begin="0.00" end="3600.00" vehsPerHour="60" color="0,2,255">
+        <route edges="UP PK KF FG GH HI ID gneE91 -gneE90 gneE38 gneE39 gneE40 -gneE128 gneE127 -gneE126 gneE68 gneE69 gneE70" color="0,2,255"/>
         <stop busStop="S2" duration="20.00"/>
         <stop busStop="S16" duration="20.00"/>
         <stop busStop="S25" duration="20.00"/>
         <stop busStop="S32" duration="20.00"/>
         <stop busStop="S44" duration="20.00"/>
         <stop busStop="S50" duration="20.00"/>
-    </vehicle>
-    <vehicle id="vehicle_6" type="bus" depart="7.00" color="red">
-        <route edges="UP B1 QL LM MH HI ID DE -gneE92 gneE30 -gneE125 gneE40 -gneE128 gneE50 -gneE131 gneE60 -gneE134 gneE70" color="yellow"/>
+    </flow>
+    <flow id="vehicle_6" type="bus" begin="0.00" end="3600.00" vehsPerHour="60"  color="red">
+        <route edges="UP B1 QL LM MH HI ID DE -gneE92 gneE30 -gneE125 gneE40 -gneE128 gneE50 -gneE131 gneE60 -gneE134 gneE70" color="red"/>
         <stop busStop="S2" duration="20.00"/>
         <stop busStop="S5" duration="20.00"/>
         <stop busStop="S8" duration="20.00"/>
@@ -115,27 +116,27 @@
         <stop busStop="S46" duration="20.00"/>
         <stop busStop="S48" duration="20.00"/>
         <stop busStop="S50" duration="20.00"/>
-    </vehicle>
-    <vehicle id="vehicle_7" type="bus" depart="8.00" color="193,168,69">
-        <route edges="UP PK KF FA -gneE75 -gneE74 -gneE73 gneE44 gneE45 gneE46 gneE47 gneE48 gneE49 gneE50 gneE51 gneE52 -gneE139 -gneE138" color="yellow"/>
+    </flow>
+    <flow id="vehicle_7" type="bus" begin="0.00" end="3600.00" vehsPerHour="60"  color="193,168,69">
+        <route edges="UP PK KF FA -gneE75 -gneE74 -gneE73 gneE44 gneE45 gneE46 gneE47 gneE48 gneE49 gneE50 gneE51 gneE52 -gneE139 -gneE138" color="193,168,69"/>
         <stop busStop="S2" duration="20.00"/>
         <stop busStop="S12" duration="20.00"/>
         <stop busStop="S40" duration="20.00"/>
         <stop busStop="S49" duration="20.00"/>
-    </vehicle>
-    <vehicle id="vehicle_8" type="bus" depart="9.00" color="yellow">
+    </flow>
+    <flow id="vehicle_8" type="bus" begin="0.00" end="3600.00" vehsPerHour="60"  color="yellow">
         <route edges="UP PK KF FG GH HI IJ JE -gneE92 gneE121 gneE120 gneE119 gneE118 gneE66 gneE67 gneE68 gneE69 gneE70" color="yellow"/>
         <stop busStop="S2" duration="20.00"/>
         <stop busStop="S17" duration="20.00"/>
         <stop busStop="S24" duration="20.00"/>
         <stop busStop="S38" duration="20.00"/>
         <stop busStop="S50" duration="20.00"/>
-    </vehicle>
-    <vehicle id="vehicle_9" type="bus" depart="10.00" color="0,128,128">
-        <route edges="UP PK KF FA -gneE75 -gneE74 gneE35 gneE36 gneE37 gneE38 gneE39 gneE40 gneE41 gneE42 gneE43 -gneE140 -gneE139 -gneE138" color="yellow"/>
+    </flow>
+    <flow id="vehicle_9" type="bus" begin="0.00" end="3600.00" vehsPerHour="60"  color="0,128,128">
+        <route edges="UP PK KF FA -gneE75 -gneE74 gneE35 gneE36 gneE37 gneE38 gneE39 gneE40 gneE41 gneE42 gneE43 -gneE140 -gneE139 -gneE138" color="0,128,128"/>
         <stop busStop="S2" duration="20.00"/>
         <stop busStop="S12" duration="20.00"/>
         <stop busStop="S32" duration="20.00"/>
         <stop busStop="S49" duration="20.00"/>
-    </vehicle>
+    </flow>
 </routes>
