@@ -3,7 +3,6 @@ import sys
 import optparse
 
 
-
 # import python modules from the $SUMO_HOME/tools directory
 if 'SUMO_HOME' in os.environ:
     tools = os.path.join(os.environ['SUMO_HOME'], 'tools')
@@ -12,11 +11,12 @@ else:
     sys.exit("please declare environment variable 'SUMO_HOME'")
     
     
-    
 from sumolib import checkBinary
 import traci
+import time
+import random
 
-
+start = time.time()
 
 def get_options():
     opt_parser = optparse.OptionParser()
@@ -25,51 +25,51 @@ def get_options():
     options, args = opt_parser.parse_args()
     return options
 
-
-# contains traci control loop
 def run():
-    step = 0
+    
+    # Load bus routes id
+    bus_routes_id = traci.route.getIDList()
+    bus_routes_id = list(bus_routes_id)
+    print("bus_routes_id=", bus_routes_id)
+    
+    # Get edges with bus stops
+    source_bus_stop_id = "S2"
+    stop_id = traci.busstop.getIDList()
+    stop_id = list(stop_id)
+    stop_id.remove('S2')
+    print("stop_id=", stop_id)
+    bus_stop_num = traci.busstop.getIDCount() #32 bus stops
+    print("bus_stop_num including source %s = %s " % (source_bus_stop_id, bus_stop_num))
+
+    #print("busnum = %s , bus stop ID= %s" % (traci.busstop.getIDCount(), str(traci.busstop.getIDList())))
+  
+    # create passengers with fixed start and random destination edges
+    passenger_ids = []
+    add_person_edge_id = "UP"
+    num_people = 5
+    
+    for i in range(num_people):
+        person_id = f"person_{i}"
+        passenger_ids.append(person_id)
+        traci.person.add(personID=person_id, edgeID=add_person_edge_id, pos=17.08)
+        destination_stop = random.choice(stop_id)
+        destination_edge = traci.lane.getEdgeID(traci.busstop.getLaneID(destination_stop))
+        print("person %s will take a bus to bus stop %s on edge %s" % (person_id, destination_stop, destination_edge))
+        traci.person.appendDrivingStage(personID=person_id, toEdge=destination_edge, lines="bus", stopID=destination_stop)
+        
+    print("passenger id list=", passenger_ids)
+    
+
+ 
+    #why people are taking the wrong bus? and then teleporting after reaching the end of the route? 
+   
+    
     while traci.simulation.getMinExpectedNumber() > 0:
         traci.simulationStep()
-        print(step)
-        
-        #bus_stop_list = []
-        #bus_stop_list = 
-        
-        print("busnum = %s , bus stop ID= %s" % (traci.busstop.getIDCount(), str(traci.busstop.getIDList())))
-        #32 bus stops
-        
-        #add person
-        
-        #traci.person.add(self, personID, edgeID, pos, depart=-3, typeID='DEFAULT_PEDTYPE')
-        #traci.person.add(personID="", edgeID="", pos="0", typeID="")
-        #traci.person.add("newPerson", "UP", "17.08", "passenger")
-        
-        #traci.person.appendWalkingStage(personID=f"bp_{passengerBatchNo}_{i}",edges=random.choice(combinedRouteList), stopID="bs_1", arrivalPos=str(busstopID))
-        #traci.person.appendWalkingStage("newPerson", "UP", "17.08")
-        
-        
-        #traci.person.appendDrivingStage(self, personID, toEdge, lines, stopID='')
-        #traci.person.appendDrivingStage(personID="newPerson", toEdge="B2", lines="bus")
-        
-        #print("getIDList", traci.person.getIDList())
-        #print("numPersons=%s, minExpected=%s" % (
-        #        traci.person.getIDCount(),
-        #        traci.simulation.getMinExpectedNumber()))
-        
-        # traci.person.appendDrivingStage()
-        # traci.person.getVehicle()
-        # traci.person.getWaitingTime()
-        
-       # #bus stop
-       # traci.busstop.getName
-       # traci.busstop.getIDList()
-        
-        
-        step += 1
+    print("simulation ends at time=%s" % traci.simulation.getTime())
 
     traci.close()
-    sys.stdout.flush()
+
 
 
 # main entry point
@@ -84,6 +84,11 @@ if __name__ == "__main__":
     
     #traci starts sumo as a subprocess and then this script connects and runs
     traci.start([sumoBinary, "-c", "test.sumocfg",
-                                            "--tripinfo-output", "tripinfo.xml"])
+                                            "--tripinfo-output", "tripinfo.xml",
+                                            "--stop-output", "stopoutput.xml",
+                                            "--time-to-teleport", "-1"])
     
     run()
+    
+    
+    
