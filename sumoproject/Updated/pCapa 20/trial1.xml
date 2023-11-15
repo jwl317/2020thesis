@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2023년 11월 15일 (수) 오후 10시 10분 37초 by Eclipse SUMO GUI Version 1.8.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="/home/jwl/sumoproject/Updated/9x9grid.net.xml"/>
+        <route-files value="/home/jwl/sumoproject/Updated/bus.rou.xml"/>
+        <additional-files value="/home/jwl/sumoproject/Updated/test.add.xml"/>
+    </input>
+
+    <output>
+        <tripinfo-output value="tripinfo.xml"/>
+        <stop-output value="stopoutput.xml"/>
+        <statistic-output value="statisticoutput.xml"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="3600"/>
+    </time>
+
+    <processing>
+        <time-to-teleport value="-1"/>
+    </processing>
+
+    <traci_server>
+        <remote-port value="54065"/>
+    </traci_server>
+
+    <gui_only>
+        <delay value="100"/>
+    </gui_only>
+
+</configuration>
+-->
+
+<tripinfos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/tripinfo_file.xsd">
+    <personinfo id="person_12" depart="0.00" type="DEFAULT_PEDTYPE">
+        <ride waitingTime="18.00" vehicle="route_7.0" depart="18.00" arrival="31.00" arrivalPos="26.51" duration="13.00" routeLength="49.77" timeLoss="8.64"/>
+    </personinfo>
+    <personinfo id="person_13" depart="0.00" type="DEFAULT_PEDTYPE">
+        <ride waitingTime="18.00" vehicle="route_7.0" depart="18.00" arrival="31.00" arrivalPos="26.51" duration="13.00" routeLength="49.77" timeLoss="8.64"/>
+    </personinfo>
+    <personinfo id="person_1" depart="0.00" type="DEFAULT_PEDTYPE">
+        <ride waitingTime="18.00" vehicle="route_7.0" depart="18.00" arrival="148.00" arrivalPos="30.49" duration="130.00" routeLength="343.11" timeLoss="49.94"/>
+    </personinfo>
+    <personinfo id="person_18" depart="0.00" type="DEFAULT_PEDTYPE">
+        <ride waitingTime="18.00" vehicle="route_7.0" depart="18.00" arrival="182.00" arrivalPos="33.15" duration="164.00" routeLength="392.34" timeLoss="59.92"/>
+    </personinfo>
+    <personinfo id="person_7" depart="0.00" type="DEFAULT_PEDTYPE">
+        <ride waitingTime="18.00" vehicle="route_7.0" depart="18.00" arrival="270.00" arrivalPos="30.44" duration="252.00" routeLength="582.51" timeLoss="91.79"/>
+    </personinfo>
+    <personinfo id="person_9" depart="0.00" type="DEFAULT_PEDTYPE">
+        <ride waitingTime="18.00" vehicle="route_7.0" depart="18.00" arrival="336.00" arrivalPos="29.85" duration="318.00" routeLength="728.19" timeLoss="115.22"/>
+    </personinfo>
+    <personinfo id="person_6" depart="0.00" type="DEFAULT_PEDTYPE">
+        <ride waitingTime="18.00" vehicle="route_7.0" depart="18.00" arrival="357.00" arrivalPos="32.54" duration="339.00" routeLength="777.50" timeLoss="122.15"/>
+    </personinfo>
+    <personinfo id="person_14" depart="0.00" type="DEFAULT_PEDTYPE">
+        <ride waitingTime="18.00" vehicle="route_7.0" depart="18.00" arrival="357.00" arrivalPos="32.54" duration="339.00" routeLength="777.50" timeLoss="122.15"/>
+    </personinfo>
+    <personinfo id="person_4" depart="0.00" type="DEFAULT_PEDTYPE">
+        <ride waitingTime="18.00" vehicle="route_7.0" depart="18.00" arrival="378.00" arrivalPos="26.71" duration="360.00" routeLength="821.49" timeLoss="129.30"/>
+    </personinfo>
+    <personinfo id="person_15" depart="0.00" type="DEFAULT_PEDTYPE">
+        <ride waitingTime="18.00" vehicle="route_7.0" depart="18.00" arrival="378.00" arrivalPos="26.71" duration="360.00" routeLength="821.49" timeLoss="129.30"/>
+    </personinfo>
+    <personinfo id="person_0" depart="0.00" type="DEFAULT_PEDTYPE">
+        <ride waitingTime="18.00" vehicle="route_7.0" depart="18.00" arrival="392.00" arrivalPos="41.30" duration="374.00" routeLength="836.11" timeLoss="133.22"/>
+    </personinfo>
+    <personinfo id="person_2" depart="0.00" type="DEFAULT_PEDTYPE">
+        <ride waitingTime="18.00" vehicle="route_7.0" depart="18.00" arrival="392.00" arrivalPos="41.30" duration="374.00" routeLength="836.11" timeLoss="133.22"/>
+    </personinfo>
+    <personinfo id="person_3" depart="0.00" type="DEFAULT_PEDTYPE">
+        <ride waitingTime="18.00" vehicle="route_7.0" depart="18.00" arrival="392.00" arrivalPos="41.30" duration="374.00" routeLength="836.08" timeLoss="133.22"/>
+    </personinfo>
+    <personinfo id="person_5" depart="0.00" type="DEFAULT_PEDTYPE">
+        <ride waitingTime="18.00" vehicle="route_7.0" depart="18.00" arrival="392.00" arrivalPos="41.30" duration="374.00" routeLength="836.08" timeLoss="133.22"/>
+    </personinfo>
+    <personinfo id="person_8" depart="0.00" type="DEFAULT_PEDTYPE">
+        <ride waitingTime="18.00" vehicle="route_7.0" depart="18.00" arrival="392.00" arrivalPos="41.30" duration="374.00" routeLength="836.08" timeLoss="133.22"/>
+    </personinfo>
+    <personinfo id="person_10" depart="0.00" type="DEFAULT_PEDTYPE">
+        <ride waitingTime="18.00" vehicle="route_7.0" depart="18.00" arrival="392.00" arrivalPos="41.30" duration="374.00" routeLength="836.08" timeLoss="133.22"/>
+    </personinfo>
+    <personinfo id="person_11" depart="0.00" type="DEFAULT_PEDTYPE">
+        <ride waitingTime="18.00" vehicle="route_7.0" depart="18.00" arrival="392.00" arrivalPos="41.30" duration="374.00" routeLength="836.08" timeLoss="133.22"/>
+    </personinfo>
+    <personinfo id="person_16" depart="0.00" type="DEFAULT_PEDTYPE">
+        <ride waitingTime="18.00" vehicle="route_7.0" depart="18.00" arrival="392.00" arrivalPos="41.30" duration="374.00" routeLength="836.08" timeLoss="133.22"/>
+    </personinfo>
+    <personinfo id="person_17" depart="0.00" type="DEFAULT_PEDTYPE">
+        <ride waitingTime="18.00" vehicle="route_7.0" depart="18.00" arrival="392.00" arrivalPos="41.30" duration="374.00" routeLength="836.08" timeLoss="133.22"/>
+    </personinfo>
+    <personinfo id="person_19" depart="0.00" type="DEFAULT_PEDTYPE">
+        <ride waitingTime="18.00" vehicle="route_7.0" depart="18.00" arrival="392.00" arrivalPos="41.30" duration="374.00" routeLength="836.08" timeLoss="133.22"/>
+    </personinfo>
+    <tripinfo id="route_7.0" depart="0.00" departLane="UP_1" departPos="12.10" departSpeed="0.00" departDelay="0.00" arrival="392.00" arrivalLane="gneE70_1" arrivalPos="41.30" arrivalSpeed="4.92" duration="392.00" routeLength="851.05" waitingTime="3.00" waitingCount="3" stopTime="180.00" timeLoss="139.14" rerouteNo="0" devices="tripinfo_route_7.0 person_route_7.0" vType="bus" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="route_7.1" depart="60.00" departLane="UP_1" departPos="12.10" departSpeed="0.00" departDelay="0.00" arrival="453.00" arrivalLane="gneE70_1" arrivalPos="41.30" arrivalSpeed="5.43" duration="393.00" routeLength="851.05" waitingTime="4.00" waitingCount="4" stopTime="180.00" timeLoss="140.42" rerouteNo="0" devices="tripinfo_route_7.1" vType="bus" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="route_7.2" depart="120.00" departLane="UP_1" departPos="12.10" departSpeed="0.00" departDelay="0.00" arrival="508.00" arrivalLane="gneE70_1" arrivalPos="41.30" arrivalSpeed="5.30" duration="388.00" routeLength="851.05" waitingTime="3.00" waitingCount="3" stopTime="180.00" timeLoss="137.18" rerouteNo="0" devices="tripinfo_route_7.2" vType="bus" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="route_7.3" depart="180.00" departLane="UP_1" departPos="12.10" departSpeed="0.00" departDelay="0.00" arrival="570.00" arrivalLane="gneE70_1" arrivalPos="41.30" arrivalSpeed="4.76" duration="390.00" routeLength="851.05" waitingTime="0.00" waitingCount="0" stopTime="180.00" timeLoss="136.18" rerouteNo="0" devices="tripinfo_route_7.3" vType="bus" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="route_7.4" depart="240.00" departLane="UP_1" departPos="12.10" departSpeed="0.00" departDelay="0.00" arrival="631.00" arrivalLane="gneE70_1" arrivalPos="41.30" arrivalSpeed="4.40" duration="391.00" routeLength="851.05" waitingTime="1.00" waitingCount="1" stopTime="180.00" timeLoss="138.85" rerouteNo="0" devices="tripinfo_route_7.4" vType="bus" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="route_7.5" depart="300.00" departLane="UP_1" departPos="12.10" departSpeed="0.00" departDelay="0.00" arrival="689.00" arrivalLane="gneE70_1" arrivalPos="41.30" arrivalSpeed="5.02" duration="389.00" routeLength="851.05" waitingTime="4.00" waitingCount="4" stopTime="180.00" timeLoss="137.78" rerouteNo="0" devices="tripinfo_route_7.5" vType="bus" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="route_7.6" depart="360.00" departLane="UP_1" departPos="12.10" departSpeed="0.00" departDelay="0.00" arrival="754.00" arrivalLane="gneE70_1" arrivalPos="41.30" arrivalSpeed="4.99" duration="394.00" routeLength="851.05" waitingTime="4.00" waitingCount="4" stopTime="180.00" timeLoss="142.28" rerouteNo="0" devices="tripinfo_route_7.6" vType="bus" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="route_7.7" depart="420.00" departLane="UP_1" departPos="12.10" departSpeed="0.00" departDelay="0.00" arrival="812.00" arrivalLane="gneE70_1" arrivalPos="41.30" arrivalSpeed="5.26" duration="392.00" routeLength="851.05" waitingTime="1.00" waitingCount="1" stopTime="180.00" timeLoss="140.72" rerouteNo="0" devices="tripinfo_route_7.7" vType="bus" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="route_7.8" depart="480.00" departLane="UP_1" departPos="12.10" departSpeed="0.00" departDelay="0.00" arrival="875.00" arrivalLane="gneE70_1" arrivalPos="41.30" arrivalSpeed="5.18" duration="395.00" routeLength="851.05" waitingTime="3.00" waitingCount="3" stopTime="180.00" timeLoss="142.45" rerouteNo="0" devices="tripinfo_route_7.8" vType="bus" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="route_7.9" depart="540.00" departLane="UP_1" departPos="12.10" departSpeed="0.00" departDelay="0.00" arrival="929.00" arrivalLane="gneE70_1" arrivalPos="41.30" arrivalSpeed="5.09" duration="389.00" routeLength="851.05" waitingTime="4.00" waitingCount="4" stopTime="180.00" timeLoss="137.44" rerouteNo="0" devices="tripinfo_route_7.9" vType="bus" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="route_7.10" depart="600.00" departLane="UP_1" departPos="12.10" departSpeed="0.00" departDelay="0.00" arrival="992.00" arrivalLane="gneE70_1" arrivalPos="41.30" arrivalSpeed="5.37" duration="392.00" routeLength="851.05" waitingTime="4.00" waitingCount="4" stopTime="180.00" timeLoss="140.29" rerouteNo="0" devices="tripinfo_route_7.10" vType="bus" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="route_7.11" depart="660.00" departLane="UP_1" departPos="12.10" departSpeed="0.00" departDelay="0.00" arrival="1052.00" arrivalLane="gneE70_1" arrivalPos="41.30" arrivalSpeed="4.70" duration="392.00" routeLength="851.05" waitingTime="2.00" waitingCount="2" stopTime="180.00" timeLoss="139.71" rerouteNo="0" devices="tripinfo_route_7.11" vType="bus" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="route_7.12" depart="720.00" departLane="UP_1" departPos="12.10" departSpeed="0.00" departDelay="0.00" arrival="1110.00" arrivalLane="gneE70_1" arrivalPos="41.30" arrivalSpeed="5.74" duration="390.00" routeLength="851.05" waitingTime="2.00" waitingCount="2" stopTime="180.00" timeLoss="138.32" rerouteNo="0" devices="tripinfo_route_7.12" vType="bus" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="route_7.13" depart="780.00" departLane="UP_1" departPos="12.10" departSpeed="0.00" departDelay="0.00" arrival="1171.00" arrivalLane="gneE70_1" arrivalPos="41.30" arrivalSpeed="4.99" duration="391.00" routeLength="851.05" waitingTime="3.00" waitingCount="3" stopTime="180.00" timeLoss="138.08" rerouteNo="0" devices="tripinfo_route_7.13" vType="bus" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="route_7.14" depart="840.00" departLane="UP_1" departPos="12.10" departSpeed="0.00" departDelay="0.00" arrival="1233.00" arrivalLane="gneE70_1" arrivalPos="41.30" arrivalSpeed="5.13" duration="393.00" routeLength="851.05" waitingTime="3.00" waitingCount="3" stopTime="180.00" timeLoss="140.91" rerouteNo="0" devices="tripinfo_route_7.14" vType="bus" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="route_7.15" depart="900.00" departLane="UP_1" departPos="12.10" departSpeed="0.00" departDelay="0.00" arrival="1293.00" arrivalLane="gneE70_1" arrivalPos="41.30" arrivalSpeed="5.45" duration="393.00" routeLength="851.05" waitingTime="1.00" waitingCount="1" stopTime="180.00" timeLoss="140.54" rerouteNo="0" devices="tripinfo_route_7.15" vType="bus" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="route_7.16" depart="960.00" departLane="UP_1" departPos="12.10" departSpeed="0.00" departDelay="0.00" arrival="1355.00" arrivalLane="gneE70_1" arrivalPos="41.30" arrivalSpeed="5.77" duration="395.00" routeLength="851.05" waitingTime="3.00" waitingCount="3" stopTime="180.00" timeLoss="142.06" rerouteNo="0" devices="tripinfo_route_7.16" vType="bus" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="route_7.17" depart="1020.00" departLane="UP_1" departPos="12.10" departSpeed="0.00" departDelay="0.00" arrival="1415.00" arrivalLane="gneE70_1" arrivalPos="41.30" arrivalSpeed="5.14" duration="395.00" routeLength="851.05" waitingTime="5.00" waitingCount="5" stopTime="180.00" timeLoss="143.64" rerouteNo="0" devices="tripinfo_route_7.17" vType="bus" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="route_7.18" depart="1080.00" departLane="UP_1" departPos="12.10" departSpeed="0.00" departDelay="0.00" arrival="1473.00" arrivalLane="gneE70_1" arrivalPos="41.30" arrivalSpeed="5.07" duration="393.00" routeLength="851.05" waitingTime="2.00" waitingCount="2" stopTime="180.00" timeLoss="139.90" rerouteNo="0" devices="tripinfo_route_7.18" vType="bus" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="route_7.19" depart="1140.00" departLane="UP_1" departPos="12.10" departSpeed="0.00" departDelay="0.00" arrival="1531.00" arrivalLane="gneE70_1" arrivalPos="41.30" arrivalSpeed="4.67" duration="391.00" routeLength="851.05" waitingTime="0.00" waitingCount="0" stopTime="180.00" timeLoss="139.14" rerouteNo="0" devices="tripinfo_route_7.19" vType="bus" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="route_7.20" depart="1200.00" departLane="UP_1" departPos="12.10" departSpeed="0.00" departDelay="0.00" arrival="1592.00" arrivalLane="gneE70_1" arrivalPos="41.30" arrivalSpeed="5.40" duration="392.00" routeLength="851.05" waitingTime="2.00" waitingCount="2" stopTime="180.00" timeLoss="140.10" rerouteNo="0" devices="tripinfo_route_7.20" vType="bus" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="route_7.21" depart="1260.00" departLane="UP_1" departPos="12.10" departSpeed="0.00" departDelay="0.00" arrival="1652.00" arrivalLane="gneE70_1" arrivalPos="41.30" arrivalSpeed="5.70" duration="392.00" routeLength="851.05" waitingTime="5.00" waitingCount="5" stopTime="180.00" timeLoss="139.39" rerouteNo="0" devices="tripinfo_route_7.21" vType="bus" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="route_7.22" depart="1320.00" departLane="UP_1" departPos="12.10" departSpeed="0.00" departDelay="0.00" arrival="1709.00" arrivalLane="gneE70_1" arrivalPos="41.30" arrivalSpeed="5.86" duration="389.00" routeLength="851.05" waitingTime="2.00" waitingCount="2" stopTime="180.00" timeLoss="136.46" rerouteNo="0" devices="tripinfo_route_7.22" vType="bus" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="route_7.23" depart="1380.00" departLane="UP_1" departPos="12.10" departSpeed="0.00" departDelay="0.00" arrival="1775.00" arrivalLane="gneE70_1" arrivalPos="41.30" arrivalSpeed="5.12" duration="395.00" routeLength="851.05" waitingTime="3.00" waitingCount="3" stopTime="180.00" timeLoss="142.57" rerouteNo="0" devices="tripinfo_route_7.23" vType="bus" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="route_7.24" depart="1440.00" departLane="UP_1" departPos="12.10" departSpeed="0.00" departDelay="0.00" arrival="1832.00" arrivalLane="gneE70_1" arrivalPos="41.30" arrivalSpeed="5.41" duration="392.00" routeLength="851.05" waitingTime="3.00" waitingCount="3" stopTime="180.00" timeLoss="139.58" rerouteNo="0" devices="tripinfo_route_7.24" vType="bus" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="route_7.25" depart="1500.00" departLane="UP_1" departPos="12.10" departSpeed="0.00" departDelay="0.00" arrival="1897.00" arrivalLane="gneE70_1" arrivalPos="41.30" arrivalSpeed="5.06" duration="397.00" routeLength="851.05" waitingTime="4.00" waitingCount="4" stopTime="180.00" timeLoss="145.46" rerouteNo="0" devices="tripinfo_route_7.25" vType="bus" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="route_7.26" depart="1560.00" departLane="UP_1" departPos="12.10" departSpeed="0.00" departDelay="0.00" arrival="1953.00" arrivalLane="gneE70_1" arrivalPos="41.30" arrivalSpeed="5.28" duration="393.00" routeLength="851.05" waitingTime="2.00" waitingCount="2" stopTime="180.00" timeLoss="140.36" rerouteNo="0" devices="tripinfo_route_7.26" vType="bus" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="route_7.27" depart="1620.00" departLane="UP_1" departPos="12.10" departSpeed="0.00" departDelay="0.00" arrival="2014.00" arrivalLane="gneE70_1" arrivalPos="41.30" arrivalSpeed="5.77" duration="394.00" routeLength="851.05" waitingTime="3.00" waitingCount="3" stopTime="180.00" timeLoss="142.03" rerouteNo="0" devices="tripinfo_route_7.27" vType="bus" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="route_7.28" depart="1680.00" departLane="UP_1" departPos="12.10" departSpeed="0.00" departDelay="0.00" arrival="2071.00" arrivalLane="gneE70_1" arrivalPos="41.30" arrivalSpeed="5.01" duration="391.00" routeLength="851.05" waitingTime="3.00" waitingCount="3" stopTime="180.00" timeLoss="138.94" rerouteNo="0" devices="tripinfo_route_7.28" vType="bus" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="route_7.29" depart="1740.00" departLane="UP_1" departPos="12.10" departSpeed="0.00" departDelay="0.00" arrival="2133.00" arrivalLane="gneE70_1" arrivalPos="41.30" arrivalSpeed="5.43" duration="393.00" routeLength="851.05" waitingTime="0.00" waitingCount="0" stopTime="180.00" timeLoss="140.58" rerouteNo="0" devices="tripinfo_route_7.29" vType="bus" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="route_7.30" depart="1800.00" departLane="UP_1" departPos="12.10" departSpeed="0.00" departDelay="0.00" arrival="2194.00" arrivalLane="gneE70_1" arrivalPos="41.30" arrivalSpeed="4.56" duration="394.00" routeLength="851.05" waitingTime="5.00" waitingCount="5" stopTime="180.00" timeLoss="143.51" rerouteNo="0" devices="tripinfo_route_7.30" vType="bus" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="route_7.31" depart="1860.00" departLane="UP_1" departPos="12.10" departSpeed="0.00" departDelay="0.00" arrival="2250.00" arrivalLane="gneE70_1" arrivalPos="41.30" arrivalSpeed="5.78" duration="390.00" routeLength="851.05" waitingTime="2.00" waitingCount="2" stopTime="180.00" timeLoss="137.96" rerouteNo="0" devices="tripinfo_route_7.31" vType="bus" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="route_7.32" depart="1920.00" departLane="UP_1" departPos="12.10" departSpeed="0.00" departDelay="0.00" arrival="2323.00" arrivalLane="gneE70_1" arrivalPos="41.30" arrivalSpeed="5.15" duration="403.00" routeLength="851.05" waitingTime="0.00" waitingCount="0" stopTime="180.00" timeLoss="150.08" rerouteNo="0" devices="tripinfo_route_7.32" vType="bus" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="route_7.33" depart="1980.00" departLane="UP_1" departPos="12.10" departSpeed="0.00" departDelay="0.00" arrival="2378.00" arrivalLane="gneE70_1" arrivalPos="41.30" arrivalSpeed="5.88" duration="398.00" routeLength="851.05" waitingTime="3.00" waitingCount="3" stopTime="180.00" timeLoss="146.36" rerouteNo="0" devices="tripinfo_route_7.33" vType="bus" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="route_7.34" depart="2040.00" departLane="UP_1" departPos="12.10" departSpeed="0.00" departDelay="0.00" arrival="2431.00" arrivalLane="gneE70_1" arrivalPos="41.30" arrivalSpeed="5.20" duration="391.00" routeLength="851.05" waitingTime="4.00" waitingCount="4" stopTime="180.00" timeLoss="138.85" rerouteNo="0" devices="tripinfo_route_7.34" vType="bus" speedFactor="1.00" vaporized=""/>
+</tripinfos>

@@ -46,7 +46,7 @@ def run():
     # create passengers with fixed start and random destination edges
     passenger_ids = []
     add_person_edge_id = "UP"
-    num_people = 5
+    num_people = 20
     
     for i in range(num_people):
         person_id = f"person_{i}"
@@ -66,7 +66,11 @@ def run():
     
     while traci.simulation.getMinExpectedNumber() > 0:
         traci.simulationStep()
-    print("simulation ends at time=%s" % traci.simulation.getTime())
+    
+    
+    for person in passenger_ids:
+        travel_time = traci.person.getWaitingTime 
+        print("simulation ends at time=%s" % traci.simulation.getTime())
 
     traci.close()
 
@@ -86,7 +90,8 @@ if __name__ == "__main__":
     traci.start([sumoBinary, "-c", "test.sumocfg",
                                             "--tripinfo-output", "tripinfo.xml",
                                             "--stop-output", "stopoutput.xml",
-                                            "--time-to-teleport", "-1"])
+                                            "--time-to-teleport", "-1",
+                                            "--statistic-output", "statisticoutput.xml"])
     
     run()
     

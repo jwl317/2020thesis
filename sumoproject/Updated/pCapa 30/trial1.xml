@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2023년 11월 15일 (수) 오후 10시 28분 02초 by Eclipse SUMO GUI Version 1.8.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="/home/jwl/sumoproject/Updated/9x9grid.net.xml"/>
+        <route-files value="/home/jwl/sumoproject/Updated/bus.rou.xml"/>
+        <additional-files value="/home/jwl/sumoproject/Updated/test.add.xml"/>
+    </input>
+
+    <output>
+        <tripinfo-output value="tripinfo.xml"/>
+        <stop-output value="stopoutput.xml"/>
+        <statistic-output value="statisticoutput.xml"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="3600"/>
+    </time>
+
+    <processing>
+        <time-to-teleport value="-1"/>
+    </processing>
+
+    <traci_server>
+        <remote-port value="57365"/>
+    </traci_server>
+
+    <gui_only>
+        <delay value="100"/>
+    </gui_only>
+
+</configuration>
+-->
+
+<tripinfos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/tripinfo_file.xsd">
+    <personinfo id="person_6" depart="0.00" type="DEFAULT_PEDTYPE">
+        <ride waitingTime="18.00" vehicle="route_7.0" depart="18.00" arrival="31.00" arrivalPos="26.51" duration="13.00" routeLength="49.77" timeLoss="8.64"/>
+    </personinfo>
+    <personinfo id="person_7" depart="0.00" type="DEFAULT_PEDTYPE">
+        <ride waitingTime="18.00" vehicle="route_7.0" depart="18.00" arrival="31.00" arrivalPos="26.51" duration="13.00" routeLength="49.77" timeLoss="8.64"/>
+    </personinfo>
+    <personinfo id="person_13" depart="0.00" type="DEFAULT_PEDTYPE">
+        <ride waitingTime="18.00" vehicle="route_7.0" depart="18.00" arrival="31.00" arrivalPos="26.51" duration="13.00" routeLength="49.77" timeLoss="8.64"/>
+    </personinfo>
+    <personinfo id="person_10" depart="0.00" type="DEFAULT_PEDTYPE">
+        <ride waitingTime="18.00" vehicle="route_7.0" depart="18.00" arrival="54.00" arrivalPos="26.33" duration="36.00" routeLength="96.21" timeLoss="17.16"/>
+    </personinfo>
+    <personinfo id="person_18" depart="0.00" type="DEFAULT_PEDTYPE">
+        <ride waitingTime="18.00" vehicle="route_7.0" depart="18.00" arrival="98.00" arrivalPos="30.14" duration="80.00" routeLength="196.45" timeLoss="32.65"/>
+    </personinfo>
+    <personinfo id="person_3" depart="0.00" type="DEFAULT_PEDTYPE">
+        <ride waitingTime="18.00" vehicle="route_7.0" depart="18.00" arrival="226.00" arrivalPos="33.54" duration="208.00" routeLength="489.17" timeLoss="75.70"/>
+    </personinfo>
+    <personinfo id="person_11" depart="0.00" type="DEFAULT_PEDTYPE">
+        <ride waitingTime="18.00" vehicle="route_7.0" depart="18.00" arrival="248.00" arrivalPos="31.51" duration="230.00" routeLength="536.97" timeLoss="83.55"/>
+    </personinfo>
+    <personinfo id="person_1" depart="0.00" type="DEFAULT_PEDTYPE">
+        <ride waitingTime="18.00" vehicle="route_7.0" depart="18.00" arrival="292.00" arrivalPos="29.88" duration="274.00" routeLength="631.82" timeLoss="99.39"/>
+    </personinfo>
+    <personinfo id="person_4" depart="0.00" type="DEFAULT_PEDTYPE">
+        <ride waitingTime="18.00" vehicle="route_7.0" depart="18.00" arrival="292.00" arrivalPos="29.88" duration="274.00" routeLength="631.79" timeLoss="99.39"/>
+    </personinfo>
+    <personinfo id="person_0" depart="0.00" type="DEFAULT_PEDTYPE">
+        <ride waitingTime="18.00" vehicle="route_7.0" depart="18.00" arrival="392.00" arrivalPos="41.30" duration="374.00" routeLength="836.11" timeLoss="133.22"/>
+    </personinfo>
+    <personinfo id="person_2" depart="0.00" type="DEFAULT_PEDTYPE">
+        <ride waitingTime="18.00" vehicle="route_7.0" depart="18.00" arrival="392.00" arrivalPos="41.30" duration="374.00" routeLength="836.11" timeLoss="133.22"/>
+    </personinfo>
+    <personinfo id="person_5" depart="0.00" type="DEFAULT_PEDTYPE">
+        <ride waitingTime="18.00" vehicle="route_7.0" depart="18.00" arrival="392.00" arrivalPos="41.30" duration="374.00" routeLength="836.08" timeLoss="133.22"/>
+    </personinfo>
+    <personinfo id="person_8" depart="0.00" type="DEFAULT_PEDTYPE">
+        <ride waitingTime="18.00" vehicle="route_7.0" depart="18.00" arrival="392.00" arrivalPos="41.30" duration="374.00" routeLength="836.08" timeLoss="133.22"/>
+    </personinfo>
+    <personinfo id="person_9" depart="0.00" type="DEFAULT_PEDTYPE">
+        <ride waitingTime="18.00" vehicle="route_7.0" depart="18.00" arrival="392.00" arrivalPos="41.30" duration="374.00" routeLength="836.08" timeLoss="133.22"/>
+    </personinfo>
+    <personinfo id="person_12" depart="0.00" type="DEFAULT_PEDTYPE">
+        <ride waitingTime="18.00" vehicle="route_7.0" depart="18.00" arrival="392.00" arrivalPos="41.30" duration="374.00" routeLength="836.08" timeLoss="133.22"/>
+    </personinfo>
+    <personinfo id="person_14" depart="0.00" type="DEFAULT_PEDTYPE">
+        <ride waitingTime="18.00" vehicle="route_7.0" depart="18.00" arrival="392.00" arrivalPos="41.30" duration="374.00" routeLength="836.08" timeLoss="133.22"/>
+    </personinfo>
+    <personinfo id="person_15" depart="0.00" type="DEFAULT_PEDTYPE">
+        <ride waitingTime="18.00" vehicle="route_7.0" depart="18.00" arrival="392.00" arrivalPos="41.30" duration="374.00" routeLength="836.08" timeLoss="133.22"/>
+    </personinfo>
+    <personinfo id="person_16" depart="0.00" type="DEFAULT_PEDTYPE">
+        <ride waitingTime="18.00" vehicle="route_7.0" depart="18.00" arrival="392.00" arrivalPos="41.30" duration="374.00" routeLength="836.08" timeLoss="133.22"/>
+    </personinfo>
+    <personinfo id="person_17" depart="0.00" type="DEFAULT_PEDTYPE">
+        <ride waitingTime="18.00" vehicle="route_7.0" depart="18.00" arrival="392.00" arrivalPos="41.30" duration="374.00" routeLength="836.08" timeLoss="133.22"/>
+    </personinfo>
+    <personinfo id="person_19" depart="0.00" type="DEFAULT_PEDTYPE">
+        <ride waitingTime="18.00" vehicle="route_7.0" depart="18.00" arrival="392.00" arrivalPos="41.30" duration="374.00" routeLength="836.08" timeLoss="133.22"/>
+    </personinfo>
+    <tripinfo id="route_7.0" depart="0.00" departLane="UP_1" departPos="12.10" departSpeed="0.00" departDelay="0.00" arrival="392.00" arrivalLane="gneE70_1" arrivalPos="41.30" arrivalSpeed="4.92" duration="392.00" routeLength="851.05" waitingTime="3.00" waitingCount="3" stopTime="180.00" timeLoss="139.14" rerouteNo="0" devices="tripinfo_route_7.0 person_route_7.0" vType="bus" speedFactor="1.00" vaporized=""/>
+</tripinfos>
